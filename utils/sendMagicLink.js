@@ -7,7 +7,7 @@ const sendMagicLink = async (email, link) => {
             {
                 sender: {
                     name: "Portfolio Auth",
-                    email: "princemungra1340@gmail.com",
+                    email: process.env.BREVO_SENDER_EMAIL,
                 },
                 to: [{ email }],
                 subject: "Login to your account",
